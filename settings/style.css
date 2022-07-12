@@ -1,9 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;1,100;1,300&family=Roboto+Mono:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;1,100;1,300&family=Roboto+Mono:wght@700&display=swap');
+/*Fim Fonts*/
+
+/*Variáveis*/
+:root{
+    --fonts-h: 'Roboto Mono';
+    --fonts-p: 'Raleway';
+}
+/*Fim Variáveis*/
+
+/*Configs padrão*/
 *{
     margin: 0;
     padding: 0;
 }
 body{
     font-family: Arial, sans-serif;
+}
+/*Fim Configs padrão*/
+
+/*NavBar*/
+nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    font-family: var(--fonts-p);
+    background-image: linear-gradient(to right, #1E3441, #3C7388);
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 3vh 0;
+}
+nav  a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 2vw;
+    font-size: 1.5vw;
+    text-shadow: 2px 2px 3px #140F0B;
+}
+nav a:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+/*Fim NavBar*/
+
+/*header*/
+header{
+    background-image: url(img/nigthSky.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    height: 25vw;
+    box-shadow: 1px 1px 15px red;
+    width: 100%;
+}
+header .title{
+    margin: 10vw 5vw;
+    align-items: center;
+    width: 40vw;
+}
+header .title h1{
+    font-family: var(--fonts-h);
+    font-size: 3.5vw;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+header .info{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+header .info p{
+    width: 20vw;
+    align-items: flex-end;
+}
+
+/*Fim do header*/
+
+img{
+    width: 15vw;
+    height: 30vh;
 }
