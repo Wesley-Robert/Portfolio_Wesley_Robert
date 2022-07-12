@@ -55,13 +55,12 @@ header{
     display: flex;
     flex-direction: row;
     height: 25vw;
-    box-shadow: 1px 1px 15px red;
     width: 100%;
 }
 header .title{
     margin: 10vw 5vw;
     align-items: center;
-    width: 40vw;
+    width: 27.5vw;
 }
 header .title h1{
     font-family: var(--fonts-h);
@@ -69,19 +68,73 @@ header .title h1{
     border-right: 2px solid #fff;
     white-space: nowrap;
     overflow: hidden;
+    text-shadow: 2px 2px 5px #140F0B;
+}
+@keyframes blinkCursor{
+    from{
+        border-right-color: #fff;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 32vw;
+    }
+}
+.animation{
+    animation: blinkCursor 500ms steps(40) infinite normal,
+    typing 4s steps(40) 1s normal both;
 }
 header .info{
-    width: 60vw;
+    width: 40vw;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+    background-color: #1B3C4F;
+    margin: 2vw 1vw 2vw 14vw;
+    color: white; 
+    border-radius: 25px;
+    box-shadow: 2px 2px 15px #1E3441;
 }
 header .info p{
-    width: 20vw;
+    width: 35vw;
     align-items: flex-end;
+    font-family: var(--fonts-p);
+    font-size: 2vw;
 }
-
+header .info h2{
+    font-size: 2.5vw;
+    font-family: var(--fonts-h);
+    text-shadow: 2px 2px 5px #140F0B;
+}
 /*Fim do header*/
+
+/*O que faço*/
+.sectionZero{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right, #4C7BA9, #fff);
+}
+.sectionZero img{
+    border-radius: 15px;
+    width: 30vw;
+    height: 60vh;
+    margin: 2vw;
+    border: 3px solid #fff;
+    text-shadow: 2px 2px 2px black;
+}
+.sectionZero .textoSectionZero{
+    margin: 4vh 20vw;
+}
+/*Fim O que faço*/
+
+
 
 img{
     width: 15vw;
