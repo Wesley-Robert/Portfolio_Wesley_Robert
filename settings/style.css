@@ -56,6 +56,7 @@ header{
     flex-direction: row;
     height: 25vw;
     width: 100%;
+    box-shadow: 1px 1px 15px black;
 }
 header .title{
     margin: 10vw 5vw;
@@ -123,18 +124,77 @@ header .info h2{
 }
 .sectionZero img{
     border-radius: 15px;
-    width: 30vw;
+    width: 80vw;
     height: 60vh;
-    margin: 2vw;
+    margin: 2vw 0vw 2vw 10vw;
     border: 3px solid #fff;
     text-shadow: 2px 2px 2px black;
 }
 .sectionZero .textoSectionZero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 4vh 20vw;
+}
+.sectionZero .textoSectionZero h2{
+    font-family: var(--fonts-h);
+    text-shadow: 2px 2px 2px gray;
+    font-size: 2vw;
+}
+.sectionZero .textoSectionZero p{
+    font-family: var(--fonts-p);
+    font-size: 1.4vw;
+    font-weight: bold;
 }
 /*Fim O que faço*/
 
-
+/*Projetos*/
+.sectionOne {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionOne h2{
+    font-family: var(--fonts-h);
+    font-size: 3vw;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 2px 2px 5px gray;
+}
+.sectionOne .exProjetos{
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+}
+.sectionOne .exProjetos div{
+    width: 50vw;
+    margin: 1vw 1vw;
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #140F0B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+}
+.sectionOne .exProjetos div h3{
+    font-family: var(--fonts-h);
+    font-size: 2vw;
+    margin: 1vw;
+}
+.sectionOne .exProjetos div p{
+    color: black;
+    font-weight: bold;
+    width: 18vw;
+    margin-top: 8vh;
+    font-family: var(--fonts-p);
+}
+.sectionOne .exProjetos div img{
+    
+}
+/*Fim projetos*/
 
 img{
     width: 15vw;
