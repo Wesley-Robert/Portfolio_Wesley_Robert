@@ -54,12 +54,12 @@ header{
     color: #fff;
     display: flex;
     flex-direction: row;
-    height: 25vw;
+    height: 47.2vw;
     width: 100%;
     box-shadow: 1px 1px 15px black;
 }
 header .title{
-    margin: 10vw 5vw;
+    margin: 25vw 5vw;
     align-items: center;
     width: 27.5vw;
 }
@@ -98,7 +98,7 @@ header .info{
     align-items: center;
     justify-content: center;
     background-color: #1B3C4F;
-    margin: 2vw 1vw 2vw 14vw;
+    margin: 15vw 1vw 15vw 14vw;
     color: white; 
     border-radius: 25px;
     box-shadow: 2px 2px 15px #1E3441;
@@ -125,7 +125,7 @@ header .info h2{
 .sectionZero img{
     border-radius: 15px;
     width: 80vw;
-    height: 60vh;
+    height: 82.3vh;
     margin: 2vw 0vw 2vw 10vw;
     border: 3px solid #fff;
     text-shadow: 2px 2px 2px black;
@@ -171,7 +171,7 @@ header .info h2{
 .sectionOne .exProjetos div{
     width: 50vw;
     margin: 1vw 1vw;
-    background-color: transparent;
+    background-color: #fff;
     border-radius: 15px;
     box-shadow: 0px 0px 10px #140F0B;
     display: flex;
@@ -188,15 +188,54 @@ header .info h2{
     color: black;
     font-weight: bold;
     width: 18vw;
-    margin-top: 8vh;
+    margin-top: 3vh;
     font-family: var(--fonts-p);
+    font-size: 1.2vw;
 }
-.sectionOne .exProjetos div img{
-    
+.sectionOne .exProjetos div .imgMarioJump{
+    width: 15vw;
+    height: 30vh;
+    border-radius: 5px;
+    border: 2px solid #1E3441;
+    background-image: url(img/marioJump.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sectionOne .exProjetos div .imgGenius{
+    width: 15vw;
+    height: 30vh;
+    border-radius: 5px;
+    border: 2px solid #1E3441;
+    background-image: url(img/geniusGame.png);
+    background-position: center;
+    background-size: cover;
+}
+.sectionOne .exProjetos div .imgEmBreve{
+    width: 15vw;
+    height: 30vh;
+    border-radius: 5px;
+    border: 2px solid #1E3441;
+    background-image: url(img/emBreve.png);
+    background-position: center;
+    background-size: cover;
 }
 /*Fim projetos*/
 
-img{
-    width: 15vw;
-    height: 30vh;
+/*Linguagens*/
+.sectionTwo{
+    display: flex;
+    flex-direction: column;
 }
+.sectionTwo .divisorDeTextos{
+    display: flex;
+    flex-direction: row;
+}
+.logoLinguagens{
+    border: 2px solid #140F0B;
+    border-radius: 3px;
+    font-size: 10vw;
+    width: 10vw;
+    height: 20vh;
+}
+/*Fim linguagens*/
