@@ -17,8 +17,35 @@
 }
 body{
     font-family: Arial, sans-serif;
+    background-color: rgb(248, 250, 239);
 }
 /*Fim Configs padrão*/
+
+/*content*/
+#content1, #content2, #content3, #content4, #content5{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 0;
+    margin-top: -70px; /* esse valor varia de acordo com a altura do seu Header, se ele tiver 200px de altura coloque aqui -220px por exemplo */
+    background-color: transparent;
+    z-index: -1;
+}
+/*fim content1*/
+
+/*scroll*/
+body::-webkit-scrollbar{
+    width: 0.5vw;
+}
+body::-webkit-scrollbar-track{
+    background-color: #1E3441;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #02b7ff;
+    border-radius: 25px;
+    border: 3px solid #02b7ff;
+}
+/*fim scroll*/
 
 /*NavBar*/
 nav{
@@ -120,21 +147,27 @@ header .info h2{
 .sectionZero{
     display: flex;
     flex-direction: row;
-    background-image: linear-gradient(to right, #4C7BA9, #fff);
+    background-color: rgb(245, 247, 234);
 }
 .sectionZero img{
     border-radius: 15px;
     width: 80vw;
     height: 82.3vh;
     margin: 2vw 0vw 2vw 10vw;
-    border: 3px solid #fff;
-    text-shadow: 2px 2px 2px black;
+    border: 3px solid #1B3C4F;
+    box-shadow: 1px 1px 5px #140F0B;
 }
 .sectionZero .textoSectionZero{
     display: flex;
     flex-direction: column;
+    width: 160vw;
+    height: 60vh;
     justify-content: center;
-    margin: 4vh 20vw;
+    background-color: #fff;
+    margin: 10vh 12vw;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #140F0B;
 }
 .sectionZero .textoSectionZero h2{
     font-family: var(--fonts-h);
@@ -145,6 +178,7 @@ header .info h2{
     font-family: var(--fonts-p);
     font-size: 1.4vw;
     font-weight: bold;
+    margin: 3vh 0vw;
 }
 /*Fim O que faço*/
 
@@ -160,7 +194,10 @@ header .info h2{
     font-size: 3vw;
     text-decoration: underline;
     text-align: center;
-    text-shadow: 2px 2px 5px gray;
+    color: #140F0B;
+    background-color: #fff;
+    padding: 0.5vh 2vw 2vh 2vw;
+    box-shadow: 0px 0px 2px #140F0B;
 }
 .sectionOne .exProjetos{
     height: 80vh;
@@ -171,9 +208,10 @@ header .info h2{
 .sectionOne .exProjetos div{
     width: 50vw;
     margin: 1vw 1vw;
+    height: 67vh;
     background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px #140F0B;
+    border-radius: 1px;
+    box-shadow: 0px 0px 2px #140F0B;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,9 +223,10 @@ header .info h2{
     margin: 1vw;
 }
 .sectionOne .exProjetos div p{
+    text-align: center;
     color: black;
     font-weight: bold;
-    width: 18vw;
+    width: 19vw;
     margin-top: 3vh;
     font-family: var(--fonts-p);
     font-size: 1.2vw;
@@ -195,7 +234,7 @@ header .info h2{
 .sectionOne .exProjetos div .imgMarioJump{
     width: 15vw;
     height: 30vh;
-    border-radius: 5px;
+    border-radius: 1px;
     border: 2px solid #1E3441;
     background-image: url(img/marioJump.png);
     background-repeat: no-repeat;
@@ -205,7 +244,7 @@ header .info h2{
 .sectionOne .exProjetos div .imgGenius{
     width: 15vw;
     height: 30vh;
-    border-radius: 5px;
+    border-radius: 1px;
     border: 2px solid #1E3441;
     background-image: url(img/geniusGame.png);
     background-position: center;
@@ -214,7 +253,7 @@ header .info h2{
 .sectionOne .exProjetos div .imgEmBreve{
     width: 15vw;
     height: 30vh;
-    border-radius: 5px;
+    border-radius: 1px;
     border: 2px solid #1E3441;
     background-image: url(img/emBreve.png);
     background-position: center;
@@ -226,16 +265,19 @@ header .info h2{
 .sectionTwo{
     display: flex;
     flex-direction: column;
+    height: 90vh;
+    width: 100%;
 }
 .sectionTwo .divisorDeTextos{
     display: flex;
     flex-direction: row;
+    background-color: #fff;
 }
 .logoLinguagens{
     border: 2px solid #140F0B;
     border-radius: 3px;
-    font-size: 10vw;
-    width: 10vw;
-    height: 20vh;
+    width: 15vw;
+    height: 25vh;
+    border-radius: 150px;
 }
 /*Fim linguagens*/
