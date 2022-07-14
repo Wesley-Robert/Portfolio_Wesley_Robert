@@ -126,8 +126,7 @@ header .info{
     justify-content: center;
     background-color: #1B3C4F;
     margin: 15vw 1vw 15vw 14vw;
-    color: white; 
-    border-radius: 25px;
+    color: white;
     box-shadow: 2px 2px 15px #1E3441;
 }
 header .info p{
@@ -278,6 +277,5 @@ header .info h2{
     border-radius: 3px;
     width: 15vw;
     height: 25vh;
-    border-radius: 150px;
 }
 /*Fim linguagens*/
