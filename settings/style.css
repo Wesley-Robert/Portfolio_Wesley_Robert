@@ -27,7 +27,7 @@ body{
     width: 1px;
     height: 1px;
     left: 0;
-    margin-top: -70px; /* esse valor varia de acordo com a altura do seu Header, se ele tiver 200px de altura coloque aqui -220px por exemplo */
+    margin-top: -9.5vh; /* esse valor varia de acordo com a altura do seu Header, se ele tiver 200px de altura coloque aqui -220px por exemplo */
     background-color: transparent;
     z-index: -1;
 }
@@ -152,7 +152,7 @@ header .info h2{
     flex-direction: row;
 }
 .sectionZero img{
-    border-radius: 15px;
+    border-radius: 2px;
     width: 80vw;
     height: 82.3vh;
     margin: 2vw 0vw 2vw 10vw;
@@ -168,7 +168,7 @@ header .info h2{
     background-color: #fff;
     margin: 10vh 12vw;
     padding: 30px;
-    border-radius: 15px;
+    border-radius: 2px;
     box-shadow: 2px 2px 5px #140F0B;
 }
 .sectionZero .textoSectionZero h2{
@@ -286,8 +286,9 @@ header .info h2{
     text-decoration-line: underline;
     margin: 2vw;
     padding: 1vw;
-    background-color: #3C7388;
+    background-color: ;
     box-shadow: 0px 0px 5px #140F0B;
+    color: #fff;
 }
 .sectionTwo .divisorDeTextos .divLinguagens{
     display: flex;
@@ -296,7 +297,7 @@ header .info h2{
 }
 .logoLinguagens{
     background-color: transparent;
-    box-shadow: 0px 0px 5px orange;
+    box-shadow: 0px 0px 5px #02b7ff;
     border-radius: 3px;
     width: 15vw;
     height: 25vh;
@@ -332,5 +333,134 @@ header .info h2{
 .sectionTwo .divisorDeTextos p{
     font-family: var(--fonts-p);
     font-size: 2vw;
+    color: #fff;
 }
 /*Fim linguagens*/
+
+/*Contato*/
+.sectionThree{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 80vh;
+    background-color: #fff;
+    align-items: center;
+    margin: 5vh 5vw;
+    box-shadow: 0px 0px 5px #140F0B;
+    border-radius: 2px;
+}
+.sectionThree .mensagem, .sectionThree .contatos{
+    width: 40vw;
+    padding: 0vh 3vw;
+}
+.sectionThree .mensagem{
+    border-right: 0.1px solid #140F0B;
+    font-family: var(--fonts-p);
+    display: flex;
+    flex-direction: column;
+}
+.sectionThree .mensagem h2{
+    font-size: 2vw;    
+}
+.sectionThree .mensagem div p{
+    position: relative;
+    width: 15vw;
+    top: 3.5vh;
+    left: 0.5vw;
+}
+.sectionThree .mensagem div p:hover{
+    opacity: 0;
+}
+.sectionThree .mensagem div input{
+    background-color: transparent;
+    border: 0px solid transparent;
+    box-shadow: 0px 0px 1px #140F0B;
+    width: 40vw;
+    height: 4vh;
+}
+.sectionThree .mensagem .suaMsg input{
+    height: 15vh;
+}
+.sectionThree .mensagem .botao{
+    margin: 2vh 10vw;
+    width: 12vw;
+    height: 8vh;
+    text-decoration: none;
+    background-color: #02b7ff;
+    font-size: 1.3vw;
+    border: 0px solid transparent;
+    border-radius: 25px;
+    color: #fff;
+    transition: 0.5s;
+}
+.sectionThree .mensagem .botao:hover{
+    background-color: #006891;
+    color: #fff;
+    cursor: pointer;
+}
+.sectionThree .contatos{
+    border-left: 0.1px solid #140F0B;
+    font-family: var(--fonts-p);
+    display: flex;
+    flex-direction: column;
+    padding: 5.8vh 5vw;
+}
+.sectionThree .contatos h2{
+    font-size: 2vw;
+}
+.sectionThree .contatos p{
+    font-size: 1.3vw;
+}
+.sectionThree .contatos .telefone, .sectionThree .contatos .email{
+    display: flex;
+    flex-direction: row;
+    margin: 1vh 0vw;
+    align-items: center;
+}
+.sectionThree .contatos div ion-icon{
+    font-size: 2vw;
+}
+.sectionThree .contatos .telefone ion-icon{
+    color: green;
+}
+.sectionThree .contatos .email ion-icon{
+    color: #006891;
+}
+.sectionThree .contatos div p a{
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+}
+.sectionThree .contatos div p a:hover{
+    color: #006891;
+    text-decoration: underline;
+}
+.sectionThree .contatos .textoFinal{
+    margin: 5vh 0vw;
+}
+/*Fim Contato*/
+
+/*footer*/
+footer{
+    display: flex;
+    background-color: #140F0B;
+    height: 15vh;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    font-family: var(--fonts-p);
+    color: #fff;
+    font-size: 2vw;
+}
+footer p a{
+    font-family: var(--fonts-p);
+    color: #fff;
+    text-decoration: none;
+    font-size: 2vw;
+}
+footer p a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*Fim footer*/
