@@ -286,7 +286,7 @@ header .info h2{
     text-decoration-line: underline;
     margin: 2vw;
     padding: 1vw;
-    background-color: ;
+    background-color: transparent;
     box-shadow: 0px 0px 5px #140F0B;
     color: #fff;
 }
